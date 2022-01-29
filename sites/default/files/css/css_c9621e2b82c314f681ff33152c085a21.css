@@ -128,15 +128,15 @@ div.indentation {
 	float: left;
 }
 div.tree-child {
-	background: url(/misc/tree.png)
+	background: url(/mineralimage/misc/tree.png)
 		no-repeat 11px center;
 }
 div.tree-child-last {
-	background: url(/misc/tree-bottom.png)
+	background: url(/mineralimage/misc/tree-bottom.png)
 		no-repeat 11px center;
 }
 div.tree-child-horizontal {
-	background: url(/misc/tree.png)
+	background: url(/mineralimage/misc/tree.png)
 		no-repeat -11px center;
 }
 .error {
@@ -373,7 +373,7 @@ ul.secondary a.active {
 	color: #fff;
 }
 html.js input.form-autocomplete {
-	background-image: url(/misc/throbber.gif);
+	background-image: url(/mineralimage/misc/throbber.gif);
 	background-repeat: no-repeat;
 	background-position: 100% 2px;
 }
@@ -395,11 +395,11 @@ html.js fieldset.collapsed legend {
 }
 html.js fieldset.collapsible legend a {
 	padding-left: 15px;
-	background: url(/misc/menu-expanded.png)
+	background: url(/mineralimage/misc/menu-expanded.png)
 		5px 75% no-repeat;
 }
 html.js fieldset.collapsed legend a {
-	background-image: url(/misc/menu-collapsed.png);
+	background-image: url(/mineralimage/misc/menu-collapsed.png);
 	background-position: 5px 50%;
 }
 * html.js fieldset.collapsed legend,
@@ -423,7 +423,7 @@ html.js fieldset.collapsible .fieldset-wrapper {
 	height: 9px;
 	overflow: hidden;
 	background: #eee
-		url(/misc/grippie.png)
+		url(/mineralimage/misc/grippie.png)
 		no-repeat center 2px;
 	border: 1px solid #ddd;
 	border-top-width: 0;
@@ -449,7 +449,7 @@ a.tabledrag-handle .handle {
 	margin-top: 4px;
 	height: 13px;
 	width: 13px;
-	background: url(/misc/draggable.png)
+	background: url(/mineralimage/misc/draggable.png)
 		no-repeat 0 0;
 }
 a.tabledrag-handle-hover .handle {
@@ -484,7 +484,7 @@ html.js .no-js {
 }
 .progress .bar {
 	background: #fff
-		url(/misc/progress.gif);
+		url(/mineralimage/misc/progress.gif);
 	border: 1px solid #00375a;
 	height: 1.5em;
 	margin: 0 0.2em;
@@ -509,7 +509,7 @@ html.js .no-js {
 	height: 15px;
 	margin: 2px;
 	background: transparent
-		url(/misc/throbber.gif)
+		url(/mineralimage/misc/throbber.gif)
 		no-repeat 0px -18px;
 	float: left;
 }
@@ -583,19 +583,19 @@ ul.menu li {
 }
 li.expanded {
 	list-style-type: circle;
-	list-style-image: url(/misc/menu-expanded.png);
+	list-style-image: url(/mineralimage/misc/menu-expanded.png);
 	padding: 0.2em 0.5em 0 0;
 	margin: 0;
 }
 li.collapsed {
 	list-style-type: disc;
-	list-style-image: url(/misc/menu-collapsed.png);
+	list-style-image: url(/mineralimage/misc/menu-collapsed.png);
 	padding: 0.2em 0.5em 0 0;
 	margin: 0;
 }
 li.leaf {
 	list-style-type: square;
-	list-style-image: url(/misc/menu-leaf.png);
+	list-style-image: url(/mineralimage/misc/menu-leaf.png);
 	padding: 0.2em 0.5em 0 0;
 	margin: 0;
 }
