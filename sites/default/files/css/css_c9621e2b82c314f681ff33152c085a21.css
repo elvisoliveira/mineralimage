@@ -710,7 +710,7 @@ ul.links li {
 	margin: 2px 0 1px 0;
 	padding: 0;
 	background: transparent
-		url(sites/all/modules/cck/images/remove.png)
+		url(/mineralimage/sites/all/modules/cck/images/remove.png)
 		no-repeat 0 0;
 	border-bottom: #c2c9ce 1px solid;
 	border-right: #c2c9ce 1px solid;
@@ -919,7 +919,7 @@ table#content-field-overview .content-new {
 	width: 49%;
 	height: 100%;
 	background: transparent
-		url(sites/all/modules/lightbox2/images/blank.gif)
+		url(/mineralimage/sites/all/modules/lightbox2/images/blank.gif)
 		no-repeat;
 	display: block;
 }
@@ -937,28 +937,28 @@ table#content-field-overview .content-new {
 #prevLink:visited:hover,
 #prevLink.force_show_nav,
 #framePrevLink {
-	background: url(sites/all/modules/lightbox2/images/prev.gif)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/prev.gif)
 		left 15% no-repeat;
 }
 #nextLink:hover,
 #nextLink:visited:hover,
 #nextLink.force_show_nav,
 #frameNextLink {
-	background: url(sites/all/modules/lightbox2/images/next.gif)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/next.gif)
 		right 15% no-repeat;
 }
 #prevLink:hover.force_show_nav,
 #prevLink:visited:hover.force_show_nav,
 #framePrevLink:hover,
 #framePrevLink:visited:hover {
-	background: url(sites/all/modules/lightbox2/images/prev_hover.gif)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/prev_hover.gif)
 		left 15% no-repeat;
 }
 #nextLink:hover.force_show_nav,
 #nextLink:visited:hover.force_show_nav,
 #frameNextLink:hover,
 #frameNextLink:visited:hover {
-	background: url(sites/all/modules/lightbox2/images/next_hover.gif)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/next_hover.gif)
 		right 15% no-repeat;
 }
 #framePrevLink,
@@ -1017,7 +1017,7 @@ table#content-field-overview .content-new {
 }
 #overlay_macff2 {
 	background: transparent
-		url(sites/all/modules/lightbox2/images/overlay.png)
+		url(/mineralimage/sites/all/modules/lightbox2/images/overlay.png)
 		repeat;
 }
 .clearfix:after {
@@ -1037,7 +1037,7 @@ table#content-field-overview .content-new {
 }
 #bottomNavClose {
 	display: block;
-	background: url(sites/all/modules/lightbox2/images/close.gif)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/close.gif)
 		left no-repeat;
 	margin-top: 33px;
 	float: right;
@@ -1050,14 +1050,14 @@ table#content-field-overview .content-new {
 }
 #loadingLink {
 	display: block;
-	background: url(sites/all/modules/lightbox2/images/loading.gif)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/loading.gif)
 		no-repeat;
 	width: 32px;
 	height: 32px;
 }
 #bottomNavZoom {
 	display: none;
-	background: url(sites/all/modules/lightbox2/images/expand.gif)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/expand.gif)
 		no-repeat;
 	width: 34px;
 	height: 34px;
@@ -1067,7 +1067,7 @@ table#content-field-overview .content-new {
 }
 #bottomNavZoomOut {
 	display: none;
-	background: url(sites/all/modules/lightbox2/images/contract.gif)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/contract.gif)
 		no-repeat;
 	width: 34px;
 	height: 34px;
@@ -1082,7 +1082,7 @@ table#content-field-overview .content-new {
 	margin-bottom: 1px;
 	height: 20px;
 	width: 20px;
-	background: url(sites/all/modules/lightbox2/images/play.png)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/play.png)
 		no-repeat;
 }
 #lightshowPause {
@@ -1092,7 +1092,7 @@ table#content-field-overview .content-new {
 	margin-bottom: 1px;
 	height: 20px;
 	width: 20px;
-	background: url(sites/all/modules/lightbox2/images/pause.png)
+	background: url(/mineralimage/sites/all/modules/lightbox2/images/pause.png)
 		no-repeat;
 }
 .lightbox2-alt-layout-data #bottomNavClose,
@@ -1138,7 +1138,7 @@ table#content-field-overview .content-new {
 }
 html.js a.views-throbbing,
 html.js span.views-throbbing {
-	background: url(sites/all/modules/views/images/status-active.gif)
+	background: url(/mineralimage/sites/all/modules/views/images/status-active.gif)
 		no-repeat right center;
 	padding-right: 18px;
 }
@@ -1449,7 +1449,7 @@ body {
 	list-style: none outside none;
 }
 #header .block-menu .content ul li {
-	background: url(sites/all/themes/Mineral/img/qdMenu.jpg)
+	background: url(/mineralimage/sites/all/themes/Mineral/img/qdMenu.jpg)
 		no-repeat scroll 0 5px black;
 	display: inline;
 	margin-right: 12px;
@@ -1672,11 +1672,11 @@ div.hoverscroll div.arrow.right {
 }
 div.hoverscroll div.arrow.left {
 	left: 0px;
-	background-image: url(sites/all/themes/Mineral/js/hoverscroll/gfx/arrow-left-small.png);
+	background-image: url(/mineralimage/sites/all/themes/Mineral/js/hoverscroll/gfx/arrow-left-small.png);
 }
 div.hoverscroll div.arrow.right {
 	right: 0px;
-	background-image: url(sites/all/themes/Mineral/js/hoverscroll/gfx/arrow-right-small.png);
+	background-image: url(/mineralimage/sites/all/themes/Mineral/js/hoverscroll/gfx/arrow-right-small.png);
 }
 div.hoverscroll div.arrow.top,
 div.hoverscroll div.arrow.bottom {
@@ -1686,11 +1686,11 @@ div.hoverscroll div.arrow.bottom {
 }
 div.hoverscroll div.arrow.top {
 	top: 0px;
-	background-image: url(sites/all/themes/Mineral/js/hoverscroll/gfx/arrow-up-small.png);
+	background-image: url(/mineralimage/sites/all/themes/Mineral/js/hoverscroll/gfx/arrow-up-small.png);
 }
 div.hoverscroll div.arrow.bottom {
 	bottom: 0px;
-	background-image: url(sites/all/themes/Mineral/js/hoverscroll/gfx/arrow-down-small.png);
+	background-image: url(/mineralimage/sites/all/themes/Mineral/js/hoverscroll/gfx/arrow-down-small.png);
 }
 
 /*
