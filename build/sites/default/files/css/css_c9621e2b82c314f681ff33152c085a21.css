@@ -885,7 +885,6 @@ table#content-field-overview .content-new {
 	position: absolute;
 	top: 40%;
 	left: 45%;
-	*left: 0%;
 }
 #hoverNav {
 	position: absolute;
@@ -1550,7 +1549,7 @@ body {
 #container .webform-client-form input#edit-captcha-response {
 	width: 173px;
 }
-.node-type-webform #main-squeeze p {
+#main-squeeze p {
 	margin-left: 575px;
 	margin-top: 135px;
 	position: absolute;
