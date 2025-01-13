@@ -9,13 +9,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Checkout GitHub Pages branch for code coverage report
-      uses: actions/checkout@v2
-      with:
-        ref: gh-pages
-        path: build
-
     - name: Build Project
       run: |
         composer install
         composer ssg
+
+    - name: Checkout GitHub Pages
+      uses: actions/checkout@v2
+      with:
+        ref: gh-pages
+        path: build
