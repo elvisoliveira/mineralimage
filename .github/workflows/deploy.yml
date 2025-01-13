@@ -1,4 +1,4 @@
-name: deploy
+name: Deploy static content to Pages
 
 on: [push]
 
@@ -14,8 +14,14 @@ jobs:
         composer install
         composer ssg
 
-    - name: Checkout GitHub Pages
-      uses: actions/checkout@v2
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
       with:
-        ref: gh-pages
-        path: build
+        path: './build'
+
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
