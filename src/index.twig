@@ -1,0 +1,52 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="view view-Home view-id-Home view-display-id-page_1 view-dom-id-1">
+		<div class="view-content">
+			<ul class="listagem-nodes">
+				<li class="field-items first odd">
+					{% include 'gallery.twig' with {
+						'id': 17,
+						'name': 'Landscape',
+						'image': '12761131975106',
+						'photos': landscape
+					} %}
+				</li>
+				<li class="field-items even">
+					{% include 'gallery.twig' with {
+						'id': 13,
+						'name': 'Advertising',
+						'image': '12696308699785',
+						'photos': advertising
+					} %}
+				</li>
+				<li class="field-items odd">
+					{% include 'gallery.twig' with {
+						'id': 15,
+						'name': 'Fashion',
+						'image': '12696308697181',
+						'photos': fashion
+					} %}
+				</li>
+				<li class="field-items last even">
+					{% include 'gallery.twig' with {
+						'id': 20,
+						'name': 'Portrait',
+						'image': '12704864046592',
+						'photos': portrait
+					} %}
+				</li>
+			</ul>
+		</div>
+	</div>
+	{% include 'block-view.twig' with {
+		'id': 1,
+		'tag': 22,
+		'data': ultimos_trabalhos
+	} %}
+	{% include 'block-view.twig' with {
+		'id': 2,
+		'tag': 11,
+		'data': last_jobs
+	} %}
+{% endblock %}

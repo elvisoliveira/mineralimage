@@ -1,0 +1,30 @@
+{
+    "pt-br": {
+        "home": "In\u00edcio",
+        "copy": "Todos os direitos reservados",
+        "authors": "Fotografos",
+        "portifolio": "\u00daltimos trabalhos",
+        "contact": "Contato",
+        "js": "ade741c415b01eea26bc115cb4337a5a",
+        "name": "Nome",
+        "email": "Email",
+        "message": "Mensagem",
+        "subject": "Assunto",
+        "en": "Inglês",
+        "pt-br": "Português"
+    },
+    "en": {
+        "home": "Home",
+        "copy": "All rights reserved",
+        "authors": "Photografer's",
+        "portifolio": "Last Jobs",
+        "contact": "Contact",
+        "js": "0eac5cec80c15a962ad4fff3496a6ec4",
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "subject": "Subject",
+        "en": "English",
+        "pt-br": "Portuguese"
+    }
+}

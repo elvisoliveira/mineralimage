@@ -1,3 +1,2 @@
-*.sh
-nbproject/
-.prettierrc
+/vendor/
+/trash/

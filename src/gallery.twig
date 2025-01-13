@@ -1,0 +1,16 @@
+<div class="views-field-field-label-value">
+	<span class="field-content">
+		<img src="{{ files }}/textimage/1/{{ image }}.png" alt="{{ name }}" title="{{ name }}" width="20" height="100"/>
+	</span>
+</div>
+<div class="views-field-field-fotos-fid">
+	<div class="field-content">
+		{% for key, item in photos %}
+			<div class="field-item field-item-{{ loop.index - 1 }}">
+				<a href="{{ files }}/{{ cached('Categorias-Large', key) }}" rel="lightbox[field_fotos_{{ id }}][{{ item }}]" class="{{ classes|join(' ') }}">
+					<img src="{{ files }}/{{ cached('Categorias-Thumb', key) }}" alt="{{ item }}" title="" width="100" height="100"/>
+				</a>
+			</div>
+		{% endfor %}
+	</div>
+</div>

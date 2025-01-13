@@ -1,0 +1,16 @@
+{
+    "name": "elvisoliveira/mineralimage",
+    "type": "project",
+    "require": {
+        "twig/twig": "^3.11"
+    },
+    "authors": [
+        {
+            "name": "Elvis Oliveira",
+            "email": "contato@elvisoliveira.com.br"
+        }
+    ],
+    "scripts": {
+        "ssg": "php twig.php en && php twig.php pt-br"
+    }
+}

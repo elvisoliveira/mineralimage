@@ -2117,29 +2117,22 @@ $.log = function(msg) {
 })(jQuery);
 ;
 $(document).ready(function() {
-	$("#page").css("display","block");
-	$('.views-field-field-fotos-fid .field-content').hoverscroll({
-		vertical: false,
-		width:    830,
-		height:   100,
-		arrows:   true,
-		arrowsOpacity: 0.7,
-		debug: false
-	});
-	
-	$(".i18n-pt-br a[href=http://fake.link]").click(function () { 
-		$('#block-views-UltimosTrabalhos-block_1 a').trigger('click')
-    });
-
-	$(".i18n-pt-br a[href=http://fake.link]").attr({ href: "#" });
-
-	$(".i18n-en a[href=http://fake.link]").click(function () { 
-		$('#block-views-UltimosTrabalhos-block_2 a').trigger('click')
-    });
-	
-	$(".i18n-en a[href=http://fake.link]").attr({ href: "#" });
-	
-	$("#page").vAlign();
-	$("#page").hAlign();
+  $("#page").css("display","block");
+  $('.views-field-field-fotos-fid .field-content').hoverscroll({
+    vertical: false,
+    width:    830,
+    height:   100,
+    arrows:   true,
+    arrowsOpacity: 0.7,
+    debug: false
+  });
+  $(".menu a[href=#]").click(function () { 
+    $('#block-views-UltimosTrabalhos-block_1 a').trigger('click')
+  });
+  $(".menu a[href=#]").click(function () { 
+    $('#block-views-UltimosTrabalhos-block_2 a').trigger('click')
+  });
+  $("#page").vAlign();
+  $("#page").hAlign();
 });
 ;

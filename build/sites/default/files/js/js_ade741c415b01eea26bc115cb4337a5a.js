@@ -309,7 +309,7 @@ Drupal.theme.prototype = {
   }
 };
 ;
-Drupal.locale = { 'pluralFormula': function($n) { return Number(($n!=1)); }, 'strings': { "Unspecified error": "Erro não especificado", "Published": "Publicado", "Promoted to front page": "Promover �  página principal", "Anonymous": "Anônimo", "Not published": "Não publicado", "Your server has been successfully tested to support this feature.": "Seu servidor foi testado e foi verificado que ele suporta esse recurso.", "Your system configuration does not currently support this feature. The \x3ca href=\"http://drupal.org/node/15365\"\x3ehandbook page on Clean URLs\x3c/a\x3e has additional troubleshooting information.": "As configurações atuais do seu sistema não suportam este recurso. Consulte a \x3ca href=\"http://drupal.org/node/15365\"\x3epágina sobre URLs limpas\x3c/a\x3e, da ajuda on-line, para mais informações sobre esse problema.", "Testing clean URLs...": "Testando URLs limpas...", "Select all rows in this table": "Selecionar todas as linhas da tabela", "Deselect all rows in this table": "Desmarcar todas as linhas da tabela", "Join summary": "Juntar resumo ao texto", "Split summary at cursor": "Separar chamada no cursor", "Drag to re-order": "Arraste para reordenar", "Changes made in this table will not be saved until the form is submitted.": "As mudanças feitas nesta tabela não vão ser salvas antes do formulário ser enviado.", "An error occurred. \n@uri\n@text": "Ocorreu um erro.\n@uri\n@text", "An error occurred. \n@uri\n(no information available).": "Ocorreu um erro.\n@uri\n(não há informação disponível).", "An HTTP error @status occurred. \n@uri": "Ocorreu um erro HTTP @status.\n@uri", "The changes to these blocks will not be saved until the \x3cem\x3eSave blocks\x3c/em\x3e button is clicked.": "As alterações nesses blocos não vão ser salvas enquanto o botão \x3cem\x3eSalvar Blocos\x3c/em\x3e não for clicado." } };;
+Drupal.locale = { 'pluralFormula': function($n) { return Number(($n!=1)); }, 'strings': { "Unspecified error": "Erro não especificado", "Published": "Publicado", "Promoted to front page": "Promover �  página principal", "Anonymous": "Anônimo", "Not published": "Não publicado", "Your server has been successfully tested to support this feature.": "Seu servidor foi testado e foi verificado que ele suporta esse recurso.", "Your system configuration does not currently support this feature. The \x3ca href=\"http://drupal.org/node/15365\"\x3ehandbook page on Clean URLs\x3c/a\x3e has additional troubleshooting information.": "As configurações atuais do seu sistema não suportam este recurso. Consulte a \x3ca href=\"http://drupal.org/node/15365\"\x3epágina sobre URLs limpas\x3c/a\x3e, da ajuda on-line, para mais informações sobre esse problema.", "Testing clean URLs...": "Testando URLs limpas...", "Select all rows in this table": "Selecionar todas as linhas da tabela", "Deselect all rows in this table": "Desmarcar todas as linhas da tabela", "Join summary": "Juntar resumo ao texto", "Split summary at cursor": "Separar chamada no cursor", "Drag to re-order": "Arraste para reordenar", "Changes made in this table will not be saved until the form is submitted.": "As mudanças feitas nesta tabela não vão ser salvas antes do formulário ser enviado.", "An error occurred. \n@uri\n@text": "Ocorreu um erro.\n@uri\n@text", "An error occurred. \n@uri\n(no information available).": "Ocorreu um erro.\n@uri\n(não há informação disponível).", "An HTTP error @status occurred. \n@uri": "Ocorreu um erro HTTP @status.\n@uri", "The changes to these blocks will not be saved until the \x3cem\x3eSave blocks\x3c/em\x3e button is clicked.": "As alterações nesses blocos não vão ser salvas enquanto o botão \x3cem\x3eSalvar Blocos\x3c/em\x3e não for clicado." } };;
 /* $Id: lightbox.js,v 1.5.2.6.2.136 2010/09/24 08:39:40 snpower Exp $ */
 
 /**
@@ -2118,29 +2118,22 @@ $.log = function(msg) {
 })(jQuery);
 ;
 $(document).ready(function() {
-	$("#page").css("display","block");
-	$('.views-field-field-fotos-fid .field-content').hoverscroll({
-		vertical: false,
-		width:    830,
-		height:   100,
-		arrows:   true,
-		arrowsOpacity: 0.7,
-		debug: false
-	});
-	
-	$(".i18n-pt-br a[href=http://fake.link]").click(function () { 
-		$('#block-views-UltimosTrabalhos-block_1 a').trigger('click')
-    });
-
-	$(".i18n-pt-br a[href=http://fake.link]").attr({ href: "#" });
-
-	$(".i18n-en a[href=http://fake.link]").click(function () { 
-		$('#block-views-UltimosTrabalhos-block_2 a').trigger('click')
-    });
-	
-	$(".i18n-en a[href=http://fake.link]").attr({ href: "#" });
-	
-	$("#page").vAlign();
-	$("#page").hAlign();
+  $("#page").css("display","block");
+  $('.views-field-field-fotos-fid .field-content').hoverscroll({
+    vertical: false,
+    width:    830,
+    height:   100,
+    arrows:   true,
+    arrowsOpacity: 0.7,
+    debug: false
+  });
+  $(".menu a[href=#]").click(function () { 
+    $('#block-views-UltimosTrabalhos-block_1 a').trigger('click')
+  });
+  $(".menu a[href=#]").click(function () { 
+    $('#block-views-UltimosTrabalhos-block_2 a').trigger('click')
+  });
+  $("#page").vAlign();
+  $("#page").hAlign();
 });
 ;

@@ -1,0 +1,32 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div id="main" class="column">
+		<div id="main-squeeze">
+			<p>
+				+ 55 (31) 3295-1818<br />
+				+ 55 (31) 8847-8783 - Daniel Moreira<br />
+				+ 55 (31) 8799-8783 - Rodrigo Mendes
+			</p>
+			<form action="#" accept-charset="UTF-8" method="post" class="webform-client-form" enctype="multipart/form-data">
+				<div>
+					{% for item in contact %}
+						<div class="webform-component-{{ item.type }}" id="webform-component-{{ item.id }}">
+							<div class="form-item" id="edit-submitted-{{ item.id }}-wrapper">
+								<label for="edit-submitted-{{ item.id }}">{{ item.id | t }}:
+									<span class="form-required" title="This field is required.">*</span>
+								</label>
+								{% if item.type == "textarea" %}
+									<textarea cols="60" rows="5" name="submitted[{{ item.id }}]" id="edit-submitted-{{ item.id }}" class="form-textarea required"></textarea>
+								{% else %}
+									<input type="text" maxlength="128" name="submitted[{{ item.id }}]" id="edit-submitted-{{ item.id }}" size="60" value="" class="form-text required" />
+								{% endif %}
+							</div>
+						</div>
+					{% endfor %}
+					<input type="submit" name="op" id="edit-submit" value="Submit" class="form-submit" />
+				</div>
+			</form>
+		</div>
+	</div>
+{% endblock %}
